@@ -24,7 +24,7 @@ btn.addEventListener('click', function () {
 
 // ### COLT STEELE'S VERSION ###
 
-const makeRandInt = () => {
+const makeRandColor = () => {
     // STEP 1: Create the rgb value
     const r = Math.floor(Math.random() * 255);  // Get R
     const g = Math.floor(Math.random() * 255);  // Get G
@@ -37,7 +37,7 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', function () {
 
     // Use the rgb value
-    const rgb = makeRandInt();
+    const rgb = makeRandColor();
     // STEP 2: Give the rgb value to the background-color
     document.body.style.backgroundColor = rgb;
 
